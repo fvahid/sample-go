@@ -2,12 +2,15 @@ package services
 
 import (
 	"log"
+	"time"
 )
 
 type Content struct {
-	Body   string
-	Header string
-	Footer string
+	Body        string
+	Header      string
+	Footer      string
+	ProvideTime time.Time
+	PublishTime time.Time
 }
 type Provider interface {
 	ProvideContent() (Content, error)
