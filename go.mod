@@ -2,7 +2,10 @@ module github.com/fvahid/sample-go
 
 go 1.19
 
-require github.com/go-redis/redis/v8 v8.11.5
+require (
+	github.com/go-redis/redis v6.15.9+incompatible
+	github.com/go-redis/redis/v8 v8.11.5
+)
 
 require (
 	github.com/cespare/xxhash/v2 v2.1.2 // indirect
